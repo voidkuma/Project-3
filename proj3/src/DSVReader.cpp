@@ -22,13 +22,11 @@ struct CDSVReader::SImplementation {
 // delimiter specifies the delimiting character
 CDSVReader::CDSVReader(std::shared_ptr< CDataSource > src, char delimiter){
     DImplementation = std::make_unique<SImplementation>(src, delimiter); //Initalizing pointer to manage memory
-    std::cout << "CDSVReader constructor" << std::endl; //Default constructor print statement
 }
 
 // Assignment:
 // Destructor for DSV reader
 CDSVReader::~CDSVReader(){
-    std::cout << "CDSVReader destructor" << std::endl; //Default destructor print statement
 }
 
 // Returns true if all rows have been read from the DSV

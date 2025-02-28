@@ -23,13 +23,10 @@ struct CDSVWriter::SImplementation{
 // or a newline
 CDSVWriter::CDSVWriter(std::shared_ptr< CDataSink > sink, char delimiter, bool quoteall = false){
     DImplementation = std::make_unique<SImplementation>(sink, delimiter, quoteall);
-    std::cout << "CDSVWriter constructor" << std::endl;
 }
 
 // Destructor for DSV writer
-CDSVWriter::~CDSVWriter(){
-    std::cout << "CDSVWriter destructor" << std::endl;
-}
+CDSVWriter::~CDSVWriter(){}
 
 // Returns true if the row is successfully written, one string per column
 // should be put in the row vector

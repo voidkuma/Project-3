@@ -17,14 +17,12 @@ struct CXMLReader::SImplementation {
 
 // Constructor
 CXMLReader::CXMLReader(std::shared_ptr<CDataSource> src) : DImplementation(std::make_unique<SImplementation>(src)) {
-    std::cout << "CXMLReader constructor" << std::endl;
 }
 
 
 // Destructor
 CXMLReader::~CXMLReader()
 {
-    std::cout << "CXMLReader destructor" << std::endl;
 }
 
 // Check if end of data source is reached
