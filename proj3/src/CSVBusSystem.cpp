@@ -10,7 +10,8 @@ struct SImplementation;
 std::unique_ptr< SImplementation > DImplementation;
 
 CCSVBusSystem(std::shared_ptr< CDSVReader > stopsrc, std::shared_ptr< CDSVReader > routesrc);
-~CCSVBusSystem();
+
+CCSVBusSystem::~CCSVBusSystem()= default;
 
 std::size_t StopCount() const noexcept override;
 std::size_t RouteCount() const noexcept override;
