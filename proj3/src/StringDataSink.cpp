@@ -1,3 +1,4 @@
+// Came as is, from the assignment zip
 #include "StringDataSink.h"
 
 const std::string &CStringDataSink::String() const{
