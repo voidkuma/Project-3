@@ -1,5 +1,6 @@
 // Created Wednesday Feb. 5th 2025
 // Rei Hernandez
+// Anthony Richards
 //
 #include <vector>
 #include <iostream>
