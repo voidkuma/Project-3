@@ -21,7 +21,7 @@ struct CDSVWriter::SImplementation{
 // specifies the delimiting character, and quoteall specifies if all values
 // should be quoted or only those that contain the delimiter, a double quote,
 // or a newline
-CDSVWriter::CDSVWriter(std::shared_ptr< CDataSink > sink, char delimiter, bool quoteall = false){
+CDSVWriter::CDSVWriter(std::shared_ptr< CDataSink > sink, char delimiter, bool quoteall){
     DImplementation = std::make_unique<SImplementation>(sink, delimiter, quoteall);
 }
 
